@@ -64,7 +64,7 @@
   </extension>
 </addon>
 
-<addon id="script.module.kodibgcommon" name="KodiBG commonly used addon functions" provider-name="HarryDoubleG" version="1.0.7">
+<addon id="script.module.kodibgcommon" name="KodiBG commonly used addon functions" provider-name="HarryDoubleG" version="2.0.0">
   <requires>
     <import addon="xbmc.python" version="3.0.0" />
   </requires>
