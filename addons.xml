@@ -1,3 +1,102 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <addons>
+<addon id="plugin.program.freebgtvs" name="Free BG TVs Playlist Generator" version="1.5.0" provider-name="harrygg">
+  <requires>
+    <import addon="xbmc.python" version="3.0.0"/>
+    <import addon="script.module.garepobg" version="0.2.3"/>
+    <import addon="script.module.kodibgcommon" version="2.0.0"/>
+  </requires>
+  <extension point="xbmc.python.script" library="exec.py"/>
+  <extension point="xbmc.service" library="service.py" start="start" />
+  <extension point="xbmc.addon.metadata">
+        <summary>Watch free TVs from Bulgaria</summary>
+        <summary lang="en">Free BG TVs Playlist Generator</summary>
+        <description lang="en">The service will generate an m3u playlist of all free channels from Bulgaria. The playlist can be loaded in Simple PVR client</description>
+        <disclaimer lang="en">Some parts of this addon may not be legal in your country of residence - please check with your local laws before installing.</disclaimer>
+        <language>en</language>
+        <platform>all</platform>
+        <forum>http://kodibg.org/forum</forum>
+        <website>https://github.com/harrygg/plugin.program.freebgtvs</website>
+  </extension>
+</addon>
+
+<addon id="script.elementum.burstBG" name="Elementum [COLOR FF00D000]Burst[/COLOR] [COLOR FFFF3B3B]BG[/COLOR]" version="2020.12.28.03" provider-name="MartinStZ">
+    <requires>
+		<import addon="xbmc.addon" version="16.0.0" />
+        <import addon="plugin.video.elementum" optional="true"/>
+		<import addon="script.module.kodi-six" />
+		<import addon="script.module.future" version="0.16.0.4"/>
+    </requires>
+    <extension point="xbmc.python.script" library="burst.py">
+        <provides>executable</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary lang="en">Elementum BG torrents provider</summary>
+        <description lang="en">Elementum BurstBG is a lean and mean multi-provider for Elementum.</description>
+        <disclaimer lang="en">The author does not host or distribute any of the content displayed by this addon. The author does not have any affiliation with the content providers.</disclaimer>
+        <website>https://elementum.surge.sh</website>
+        <source></source>
+        <forum>TODO</forum>
+        <assets>
+            <icon>icon.png</icon>
+            <fanart>fanart.jpg</fanart>
+        </assets>
+    </extension>
+</addon>
+
+<addon id="script.module.garepobg"
+       name="garepobg"
+       version="0.2.0"
+       provider-name="kodi1">
+  <requires>
+    <import addon="xbmc.python" version="3.0.0"/>
+    <import addon="script.module.requests" version="1.1.0"/>
+  </requires>
+  <extension point="xbmc.python.module"
+             library="lib" />
+  <extension point="xbmc.addon.metadata">
+    <summary></summary>
+    <description></description>
+    <license></license>
+    <platform>all</platform>
+    <forum>http://forum.kodi.tv/showthread.php?tid=195322</forum>
+    <website>https://github.com/kodi1/script.module.garepobg</website>
+  </extension>
+</addon>
+
+<addon id="script.module.kodibgcommon" name="KodiBG commonly used addon functions" provider-name="HarryDoubleG" version="1.0.7">
+  <requires>
+    <import addon="xbmc.python" version="3.0.0" />
+  </requires>
+  <extension library="lib" point="xbmc.python.module" />
+  <extension point="xbmc.addon.metadata">
+    <assets>
+      <icon>icon.png</icon>
+    </assets>
+    <summary>KodiBG common addon functions</summary>
+    <description>KodiBG common addon functions</description>
+    <source>https://github.com/harrygg/script.module.kodibgcommons</source>
+    <platform>all</platform>
+    <license>GNU GENERAL PUBLIC LICENSE Version 3</license>
+  <news>[B]Version v2.0.0[/B]
+- Initial version</news>
+</extension>
+</addon>
+
+<addon id="repository.bleeding.edge" name="Kodi Bleeding Edge" version="1.0.0" provider-name="Valentin Marinov">
+    <requires>
+        <import addon="xbmc.addon" version="12.0.0"/>
+    </requires>
+    <extension point="xbmc.addon.repository" name="Kodi Bleeding Edge">
+        <info compressed="false">https://raw.githubusercontent.com/mapmot/repository.bleeding.edge/master/addons.xml</info>
+        <checksum>https://raw.githubusercontent.com/mapmot/repository.bleeding.edge/master/addons.xml.md5</checksum>
+        <datadir zip="true">https://raw.githubusercontent.com/mapmot/repository.bleeding.edge/master</datadir>
+        <hashes>false</hashes>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary> </summary>
+        <description> </description>
+        <platform>all</platform>
+    </extension>
+</addon>
 </addons>
